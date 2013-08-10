@@ -1,0 +1,10 @@
+[Unit]
+Description=Redis
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker run gary/redis
+
+[Install]
+WantedBy=local.target

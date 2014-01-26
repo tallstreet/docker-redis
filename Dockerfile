@@ -9,6 +9,5 @@ RUN         echo 'deb http://ppa.launchpad.net/chris-lea/redis-server/ubuntu qua
 RUN         apt-get update
 RUN         apt-get install redis-server -y || true
 ADD         redis.conf /etc/redis/redis.conf
-EXPOSE      6379:6379
 ENTRYPOINT  ["/usr/bin/redis-server"]
 CMD         ["/etc/redis/redis.conf"]

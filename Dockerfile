@@ -2,7 +2,7 @@
 #
 # VERSION               2.6.14
 
-FROM        base
+FROM        ubuntu
 MAINTAINER  Gary Roberts <gary@tallstreet.com>
 RUN         apt-key adv --keyserver keyserver.ubuntu.com --recv C7917B12
 RUN         echo 'deb http://ppa.launchpad.net/chris-lea/redis-server/ubuntu quantal main' > /etc/apt/sources.list.d/chris-lea.list

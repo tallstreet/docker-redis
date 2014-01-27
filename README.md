@@ -7,7 +7,7 @@ Sets up a container with redis installed listening on port 6379.
 To run the container, do the following:
 
 ```
-docker run -d gary/redis
+docker run -d -p 6379:6379 gary/redis
 docker ps
 ID                  IMAGE               COMMAND                CREATED             STATUS              PORTS
 a287b0f83bc8        gary/redis:latest   /usr/bin/redis-serve   16 minutes ago      Up 16 minutes       6379->6379
